@@ -1,0 +1,30 @@
+#BlueJ class context
+comment0.target=PerimeterAssignmentRunner
+comment1.params=s
+comment1.target=double\ getPerimeter(edu.duke.Shape)
+comment10.params=
+comment10.target=void\ testFileWithLargestPerimeter()
+comment11.params=
+comment11.target=void\ triangle()
+comment12.params=
+comment12.target=void\ printFileNames()
+comment13.params=args
+comment13.target=void\ main(java.lang.String[])
+comment2.params=s
+comment2.target=int\ getNumPoints(edu.duke.Shape)
+comment3.params=s
+comment3.target=double\ getAverageLength(edu.duke.Shape)
+comment4.params=s
+comment4.target=double\ getLargestSide(edu.duke.Shape)
+comment5.params=s
+comment5.target=double\ getLargestX(edu.duke.Shape)
+comment6.params=
+comment6.target=double\ getLargestPerimeterMultipleFiles()
+comment6.text=\ public\ double\ getLargestPerimeterMultipleFiles()\ {\r\n\ \ \ \ \ \ \ \ //\ Put\ code\ here\r\n\ \ \ \ \ \ \ \ LinkedList<Double>\ arrPerimeter\ \=\ new\ LinkedList<>();\r\n\ \ \ \ \ \ \ \ DirectoryResource\ dr\ \=\ new\ DirectoryResource();\r\n\ \ \ \ \ \ \ \ for\ (File\ f\ \:\ dr.selectedFiles())\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ FileResource\ fr\ \=\ new\ FileResource(f);\r\n\ \ \ \ \ \ \ \ \ \ \ //\ System.out.println(f.getName());\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ getFileWithLargestPerimeter(f);\r\n\ \ \ \ \ \ \ \ \ \ \ \ Shape\ s\ \=\ new\ Shape(fr);\r\n\ \ \ \ \ \ \ \ \ \ \ \ //\ \ System.out.println(s.getClass());\r\n\ \ \ \ \ \ \ \ \ \ \ \ double\ perimeter\=getPerimeter(s);\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("The\ Individual\ perimeter\ values\ are"+"\ "+perimeter);\r\n\ \ \ \ \ \ \ \ \ \ \ \ arrPerimeter.push(perimeter);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ System.out.println(arrPerimeter);\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ double\ max\ \=\ arrPerimeter.get(0);\r\n\ \ \ \ \ \ \ \ double\ n\ \=\ arrPerimeter.size();\r\n\ \ \ \ \ \ \ \ for\ (int\ i\ \=\ 1;\ i\ <\ n;\ i++)\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ if\ (arrPerimeter.get(i)\ >\ max)\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ max\ \=\ arrPerimeter.get(i);\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ double\ largestPerimeter\ \=\ max;\r\n\ \ \ \ \ \ \ \ System.out.println("The\ Largest\ Perimieter\ is\ \="\ +\ "\ "\ +largestPerimeter);\r\n\ \ \ \ \ \ \ \ return\ largestPerimeter;\r\n}
+comment7.params=
+comment7.target=java.lang.String\ getFileWithLargestPerimeter()
+comment8.params=
+comment8.target=void\ testPerimeter()
+comment9.params=
+comment9.target=void\ testPerimeterMultipleFiles()
+numComments=14
